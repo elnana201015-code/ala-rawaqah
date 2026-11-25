@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>على رواقة | إنشاء حساب</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="register.css" />
+</head>
+<body>
+
+  <div class="chalk-frame"></div>
+
+  <div class="bg-doodles">
+    <svg class="coffee-top-right" viewBox="0 0 100 100" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M36 28 C33 21, 41 17, 38 10" stroke-dasharray="3 2"/>
+      <path d="M50 25 C47 18, 55 14, 52 7" stroke-dasharray="3 2"/>
+      <path d="M63 29 C60 22, 68 18, 65 11" stroke-dasharray="3 2"/>
+      <path d="M25 38 H72 L67 74 C66 80, 61 84, 55 84 H42 C36 84, 31 80, 30 74 Z"/>
+      <path d="M71 45 C83 45, 85 65, 69 67"/>
+      <path d="M18 88 Q48 93 79 88"/>
+    </svg>
+
+    <svg class="coffee-bottom-left" viewBox="0 0 100 100" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M38 27 C35 20, 43 16, 40 9" stroke-dasharray="3 2"/>
+      <path d="M53 25 C50 18, 58 14, 55 7" stroke-dasharray="3 2"/>
+      <path d="M26 38 H73 L68 74 C67 80, 62 84, 56 84 H43 C37 84, 32 80, 31 74 Z"/>
+      <path d="M72 45 C84 45, 86 65, 70 67"/>
+      <path d="M19 88 Q49 93 80 88"/>
+    </svg>
+  </div>
+
+  <main class="container">
+    <h1 class="brand-title">على رواقة</h1>
+
+    <section id="stepOne" class="step-box active-step">
+      <p class="step-subtitle">املأ بياناتك على رواقة عشان نبدأ</p>
+
+      <form id="registerForm" class="chalk-form" novalidate>
+        <div class="input-group">
+          <label for="studentName">اسمك</label>
+          <input type="text" id="studentName" class="chalk-input" placeholder="اكتب اسمك هنا" />
+          <p class="error-msg" id="nameError"></p>
+        </div>
+
+        <div class="input-group">
+          <label for="fatherName">اسم الحج</label>
+          <input type="text" id="fatherName" class="chalk-input" placeholder="اكتب اسم الحج" />
+          <p class="error-msg" id="fatherError"></p>
+        </div>
+
+        <div class="input-group">
+          <label for="phoneNumber">رقم الموبايل</label>
+          <input type="tel" id="phoneNumber" class="chalk-input" placeholder="01xxxxxxxxx" />
+          <p class="error-msg" id="phoneError"></p>
+        </div>
+
+        <div class="input-group">
+          <label for="password">كلمة المرور (لو نسيتها مشكلتك بقا 🤷‍♀️)</label>
+          <input type="password" id="password" class="chalk-input" placeholder="••••••••" />
+          <p class="error-msg" id="passwordError"></p>
+        </div>
+
+        <button type="submit" class="btn-terracotta" id="nextStepBtn">
+          يلا نكمل
+        </button>
+      </form>
+    </section>
+
+    <section id="stepTwo" class="step-box hidden-step">
+      <h2 class="step-heading">اختار مسارك</h2>
+      <p class="step-subtitle">حدد مسارك عشان نجهزلك كل حاجة تخصه</p>
+
+      <div class="tracks-list">
+        <label class="track-card">
+          <input type="radio" name="track" value="طب وعلوم حياة" />
+          <span class="custom-radio"></span>
+          <span class="track-name">طب وعلوم حياة</span>
+          <svg class="track-icon" viewBox="0 0 64 64" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M32 52 C32 52 10 38 10 22 C10 14 16 9 23 9 C27.5 9 30.5 11.5 32 14.5 C33.5 11.5 36.5 9 41 9 C48 9 54 14 54 22 C54 38 32 52 32 52 Z"/>
+            <path d="M18 28 H25 L28 21 L33 34 L36 26 H45"/>
+          </svg>
+        </label>
+
+        <label class="track-card">
+          <input type="radio" name="track" value="هندسة وعلوم حاسب" />
+          <span class="custom-radio"></span>
+          <span class="track-name">هندسة وعلوم حاسب</span>
+          <svg class="track-icon" viewBox="0 0 64 64" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="10" y="13" width="44" height="30" rx="4"/>
+            <path d="M24 51 H40"/>
+            <path d="M32 43 V51"/>
+            <path d="M25 24 L19 28 L25 32"/>
+            <path d="M39 24 L45 28 L39 32"/>
+            <path d="M34 22 L30 34"/>
+          </svg>
+        </label>
+
+        <label class="track-card">
+          <input type="radio" name="track" value="آداب وفنون" />
+          <span class="custom-radio"></span>
+          <span class="track-name">آداب وفنون</span>
+          <svg class="track-icon" viewBox="0 0 64 64" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M48 12 C34 14 20 26 16 48 C28 44 44 34 48 12 Z"/>
+            <path d="M14 52 L28 36"/>
+            <path d="M26 28 H35"/>
+            <path d="M22 35 H31"/>
+          </svg>
+        </label>
+
+        <label class="track-card">
+          <input type="radio" name="track" value="أعمال" />
+          <span class="custom-radio"></span>
+          <span class="track-name">أعمال</span>
+          <svg class="track-icon" viewBox="0 0 64 64" fill="none" stroke="#ffffff" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="10" y="21" width="44" height="31" rx="4"/>
+            <path d="M24 21 V15 C24 13 25.5 12 27.5 12 H36.5 C38.5 12 40 13 40 15 V21"/>
+            <path d="M10 33 H54"/>
+            <path d="M29 33 V37 H35 V33"/>
+          </svg>
+        </label>
+      </div>
+
+      <button type="button" class="btn-terracotta" id="toSpecBtn">
+        يلا نكمل
+      </button>
+    </section>
+
+    <section id="stepThree" class="step-box hidden-step">
+      <h2 class="step-heading">اختيار مادة التخصص</h2>
+      <p class="step-subtitle">اختار مادة التخصص المناسبة لمسارك</p>
+
+      <div id="specList" class="tracks-list"></div>
+
+      <button type="button" class="btn-terracotta" id="finishBtn">
+        تمام، خش على مسارك
+      </button>
+    </section>
+  </main>
+
+  <script src="register.js"></script>
+</body>
+</html>

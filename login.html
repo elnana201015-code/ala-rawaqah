@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>على رواقة | تسجيل الدخول</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Aref+Ruqaa:wght@400;700&family=Cairo:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="login.css" />
+</head>
+<body>
+
+  <div class="chalk-frame"></div>
+
+  <div class="bg-doodles">
+    <svg class="coffee-top-right" viewBox="0 0 100 100" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M36 28 C33 21, 41 17, 38 10" stroke-dasharray="3 2"/>
+      <path d="M50 25 C47 18, 55 14, 52 7" stroke-dasharray="3 2"/>
+      <path d="M63 29 C60 22, 68 18, 65 11" stroke-dasharray="3 2"/>
+      <path d="M25 38 H72 L67 74 C66 80, 61 84, 55 84 H42 C36 84, 31 80, 30 74 Z"/>
+      <path d="M71 45 C83 45, 85 65, 69 67"/>
+      <path d="M18 88 Q48 93 79 88"/>
+    </svg>
+
+    <svg class="coffee-bottom-left" viewBox="0 0 100 100" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+      <path d="M38 27 C35 20, 43 16, 40 9" stroke-dasharray="3 2"/>
+      <path d="M53 25 C50 18, 58 14, 55 7" stroke-dasharray="3 2"/>
+      <path d="M26 38 H73 L68 74 C67 80, 62 84, 56 84 H43 C37 84, 32 80, 31 74 Z"/>
+      <path d="M72 45 C84 45, 86 65, 70 67"/>
+      <path d="M19 88 Q49 93 80 88"/>
+    </svg>
+  </div>
+
+  <main class="container">
+    <h1 class="brand-title">على رواقة</h1>
+    <p class="step-subtitle">أهلاً بك من جديد، سجل دخولك وكمل على رواقة</p>
+
+    <form id="loginForm" class="chalk-form" novalidate>
+      <div class="input-group">
+        <label for="loginPhone">رقم الموبايل</label>
+        <input type="tel" id="loginPhone" class="chalk-input" placeholder="01xxxxxxxxx" />
+        <p class="error-msg" id="loginPhoneError"></p>
+      </div>
+
+      <div class="input-group">
+        <label for="loginPassword">كلمة المرور</label>
+        <input type="password" id="loginPassword" class="chalk-input" placeholder="••••••••" />
+        <p class="error-msg" id="loginPasswordError"></p>
+      </div>
+
+      <button type="submit" class="btn-terracotta" id="loginBtn">
+        دخول
+      </button>
+    </form>
+  </main>
+
+  <script src="login.js"></script>
+</body>
+</html>
